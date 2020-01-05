@@ -254,7 +254,7 @@
   </select>
 
   <!--在运营商后台查询所有出租房信息-->
-  <select id="selectHouseByUser" resultType="House">
+  <select id="selectAllHouse" resultType="House">
     select h.*,t.NAME tname,s.NAME sname,d.NAME dname from house h
     left join type t on h.TYPE_ID=t.ID
     left join street s on h.STREET_ID=s.ID
